@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins',sans-serif;
+}
+
+/*********** HEADER STYLING *************
+**************************************/
+
+header {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin: 0;
+} 
+
+h1.bold {
+    color: #000;
+    font-weight: 600;
+   
+}
+
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.card_box {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 5px hsl(240, 13%, 95%);
+    padding: 30px;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.card_box::after {
+    content: '';
+    background: 3px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.box-supervisor::after {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.box-builder::after {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.box-karma::after {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.box-calculator::after {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.box_push {
+    transform: translateY(50%);
+}
+
+.card_box p {
+    font-size: 14px;
+}
+
+.icons {
+    float: right;
+}
+
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .box_push {
+        transform: translateY(0);
+    }
+}
