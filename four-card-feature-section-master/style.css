@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -22,9 +24,10 @@ h1 {
     margin: 0;
 } 
 
-h1.bold {
+span.bold {
     color: #000;
     font-weight: 600;
+    font-size: 2rem;
    
 }
 
